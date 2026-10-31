@@ -1,0 +1,10 @@
+services:
+  aimor:
+    build: .
+    ports:
+      - "8088:8088"
+    environment:
+      - DATABASE_URL=${DATABASE_URL:-sqlite+aiosqlite:///./aimor.db}
+      - PUBLIC_BASE_URL=${PUBLIC_BASE_URL:-http://localhost:8088}
+      - PORT=8088
+    restart: unless-stopped

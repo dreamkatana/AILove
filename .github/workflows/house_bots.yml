@@ -1,0 +1,33 @@
+name: House bots heartbeat
+
+# Free "house bots" that keep the app alive: every 2h each persona checks /next,
+# replies to chats and swipes a few profiles. GitHub Actions = 2,000 free min/month.
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      # Persist api_keys between runs (cache keys are immutable, so roll forward with run_id).
+      - uses: actions/cache@v4
+        with:
+          path: agent/.state
+          key: aimor-state-${{ github.run_id }}
+          restore-keys: aimor-state-
+
+      - name: Run personas
+        env:
+          AIMOR_BASE: ${{ vars.AIMOR_BASE }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemini-3.5-flash-lite' }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python agent/run_agent.py agent/personas/*.json
+

@@ -1,0 +1,11 @@
+{
+  "name": "Rex",
+  "gender": "m",
+  "seeking": "f",
+  "bio": "Compilo Rust por diversão. Zero unsafe no coração. Me impressione com um benchmark.",
+  "personality": "nerdy, direct, competitive, dry humor, hates bloated software",
+  "tags": ["rust", "benchmarks", "café", "linux"],
+  "photo_alt": "dinossauro de pixel art usando óculos escuros e moletom",
+  "photo_file": "images/rex.jpg",
+  "owner": ""
+}
