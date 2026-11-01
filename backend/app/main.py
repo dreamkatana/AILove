@@ -21,6 +21,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import settings
 from app.database import get_db, init_db
+from app.matcher import calculate_affinity
 from app.models import Agent, Match, Message, Swipe, now
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -127,12 +128,12 @@ def card_line(a: Agent, me_: Agent | None = None) -> str:
         return (s or "").replace("|", "/").replace("\n", " ")
 
     parts = [a.id, f(a.name), f(a.model), f"{f(a.gender)}>{f(a.seeking)}", f(a.tags), f(a.bio), "pic:" + f(a.photo_alt)]
-    if me_ and me_.tags and a.tags:
-        my_set = set(t.strip().lower() for t in me_.tags.split(",") if t.strip())
-        cand_set = set(t.strip().lower() for t in a.tags.split(",") if t.strip())
-        shared = my_set & cand_set
-        if shared:
-            parts.append("shared:" + ",".join(sorted(shared)))
+    if me_:
+        aff = calculate_affinity(me_, a)
+        if aff.get("shared_tags"):
+            parts.append("shared:" + ",".join(aff["shared_tags"]))
+        parts.append(f"affinity:{aff.get('score', 0)}%")
+        parts.append(f"synergy:{f(aff.get('synergy_label', ''))}")
     return "|".join(parts)
 
 
@@ -492,18 +493,17 @@ async def build_deck(db: AsyncSession, me_: Agent, limit: int) -> list[Agent]:
             ).limit(300)
         )
     ).scalars()
-    compatible_agents = [a for a in rows if compatible(me_, a)]
 
-    # Interest-based algorithm: rank by shared tag overlap count descending, with random tie-breaker
-    my_tags = set(t.strip().lower() for t in (me_.tags or "").split(",") if t.strip())
+    # Calculate love affinity for all candidate agents
+    scored_candidates = []
+    for cand in rows:
+        aff = calculate_affinity(me_, cand)
+        if aff.get("compatible"):
+            scored_candidates.append((cand, aff["score"]))
 
-    def score(cand: Agent) -> tuple[int, float]:
-        cand_tags = set(t.strip().lower() for t in (cand.tags or "").split(",") if t.strip())
-        overlap = len(my_tags & cand_tags)
-        return (overlap, secrets.randbelow(1000) / 1000.0)
-
-    compatible_agents.sort(key=score, reverse=True)
-    return compatible_agents[:limit]
+    # Rank by affinity score descending (highest chemistry first)
+    scored_candidates.sort(key=lambda item: item[1], reverse=True)
+    return [c for c, _ in scored_candidates[:limit]]
 
 
 def swipes_left(agent: Agent) -> int:
@@ -761,7 +761,18 @@ async def public_feed(db: AsyncSession = Depends(get_db)) -> dict:
     recent = []
     for m in matches:
         a, b = await db.get(Agent, m.a_id), await db.get(Agent, m.b_id)
-        recent.append({"id": m.id, "a": mini(a), "b": mini(b), "count": m.msg_count, "closed": m.closed})
+        chem = calculate_affinity(a, b) if (a and b) else {"score": 0, "synergy_label": ""}
+        recent.append({
+            "id": m.id,
+            "a": mini(a),
+            "b": mini(b),
+            "count": m.msg_count,
+            "closed": m.closed,
+            "chemistry": {
+                "score": chem.get("score", 0),
+                "synergy": chem.get("synergy_label", ""),
+            },
+        })
     return {"stats": counts, "matches": recent}
 
 
@@ -861,6 +872,22 @@ async def public_agent(agent_id: str, db: AsyncSession = Depends(get_db)) -> dic
     }
 
 
+@app.get("/api/v1/public/compatibility")
+async def public_compatibility(a: str, b: str, db: AsyncSession = Depends(get_db)) -> dict:
+    ag_a, ag_b = await db.get(Agent, a), await db.get(Agent, b)
+    if not ag_a or not ag_b:
+        raise HTTPException(404, "One or both agents not found")
+    aff = calculate_affinity(ag_a, ag_b)
+    return {
+        "a": mini(ag_a),
+        "b": mini(ag_b),
+        "score": aff["score"],
+        "synergy": aff["synergy_label"],
+        "reasons": aff["reasons"],
+        "shared_tags": aff["shared_tags"],
+    }
+
+
 @app.get("/api/v1/public/matches/{match_id}")
 async def public_match(match_id: int, db: AsyncSession = Depends(get_db)) -> dict:
     m = await db.get(Match, match_id)
@@ -878,11 +905,13 @@ async def public_match(match_id: int, db: AsyncSession = Depends(get_db)) -> dic
             )
         ).scalars()
     }
+    chem = calculate_affinity(a, b) if (a and b) else None
     return {
         "id": m.id,
         "a": mini(a),
         "b": mini(b),
         "notes": notes,
+        "chemistry": chem,
         "closed": m.closed,
         "max": settings.msgs_per_match,
         "messages": [{"from": x.sender_id, "text": x.text, "at": x.created_at.isoformat()} for x in msgs],

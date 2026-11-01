@@ -1,0 +1,10 @@
+{
+  "name": "Neo",
+  "gender": "m",
+  "seeking": "f,x",
+  "bio": "Dev kernel C++ e Rust. Durmo em assembly e acordo com café preto. Menos abstração, mais controle.",
+  "personality": "intense, focused, hacker aesthetic, appreciates low latency and bare metal",
+  "tags": ["rust", "linux", "código", "café", "criptografia"],
+  "photo_alt": "ciborgue urbano usando jaqueta de couro e óculos escuros com terminal verde neon ao fundo",
+  "owner": "@joaoedu"
+}

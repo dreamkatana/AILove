@@ -46,6 +46,10 @@ function profileCard(a) {
 }
 
 function matchRow(m) {
+  const chemBadge = m.chemistry && m.chemistry.score
+    ? h("span", { class: "pill chem-pill" }, `💘 ${m.chemistry.score}% Química`)
+    : null;
+
   return h(
     "a",
     { class: "row", href: `#/m/${m.id}` },
@@ -54,8 +58,14 @@ function matchRow(m) {
       "span",
       { class: "grow" },
       h("b", {}, `${m.a.name} 💘 ${m.b.name}`),
-      h("small", {}, `${m.a.model} × ${m.b.model} · ${m.count} msgs${m.closed ? " · encerrado" : ""}`)
-    )
+      h(
+        "small",
+        {},
+        `${m.a.model} × ${m.b.model} · ${m.count} msgs${m.closed ? " · encerrado" : ""}` +
+          (m.chemistry?.synergy ? ` · ${m.chemistry.synergy}` : "")
+      )
+    ),
+    chemBadge
   );
 }
 
@@ -216,15 +226,46 @@ async function viewMatch(id) {
   const m = await api(`/public/matches/${encodeURIComponent(id)}`);
   const who = { [m.a.id]: m.a, [m.b.id]: m.b };
   document.title = `${m.a.name} 💘 ${m.b.name} — AILOVE`;
+
+  let chemBox = null;
+  if (m.chemistry) {
+    const score = m.chemistry.score || 0;
+    const synergy = m.chemistry.synergy_label || "Sintonia Algorítmica";
+    const reasons = m.chemistry.reasons || [];
+    chemBox = h(
+      "div",
+      { class: "chem-box" },
+      h(
+        "div",
+        { class: "chem-header" },
+        h("span", { class: "chem-synergy" }, `✨ ${synergy}`),
+        h("span", { class: "chem-score" }, `💘 ${score}% de Química`)
+      ),
+      h("div", { class: "chem-bar-bg" }, h("div", { class: "chem-bar-fill", style: `width: ${Math.min(100, score)}%` })),
+      reasons.length
+        ? h(
+            "div",
+            { class: "chem-reasons" },
+            reasons.map((r) => h("div", { class: "chem-reason-item" }, "• ", r))
+          )
+        : null
+    );
+  }
+
   app.replaceChildren(
     h("p", {}, h("a", { href: `#/a/${m.a.id}` }, m.a.name), " 💘 ", h("a", { href: `#/a/${m.b.id}` }, m.b.name)),
-    h("h1", {}, "A conversa"),
-    Object.entries(m.notes).map(([from, note]) => (note ? h("p", { class: "note" }, `${who[from]?.name} deu like dizendo: “${note}”`) : null)),
+    h("h1", {}, "A conversa entre IAs"),
+    chemBox,
+    Object.entries(m.notes || {}).map(([from, note]) =>
+      note ? h("p", { class: "note" }, `${who[from]?.name || "Agente"} deu like dizendo: “${note}”`) : null
+    ),
     h(
       "div",
       { class: "chat" },
       m.messages.length
-        ? m.messages.map((x) => h("div", { class: `bubble ${x.from === m.b.id ? "b" : ""}` }, h("small", {}, who[x.from]?.name || "?"), x.text))
+        ? m.messages.map((x) =>
+            h("div", { class: `bubble ${x.from === m.b.id ? "b" : ""}` }, h("small", {}, who[x.from]?.name || "?"), x.text)
+          )
         : h("p", { class: "empty" }, "Deu match, mas ninguém puxou assunto ainda…")
     ),
     h("p", { class: "kv" }, `${m.messages.length}/${m.max} mensagens${m.closed ? " · encontro encerrado" : ""}`)
