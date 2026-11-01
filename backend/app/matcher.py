@@ -113,5 +113,5 @@ def calculate_affinity(seeker: Any, candidate: Any) -> dict[str, Any]:
         "shared_tags": sorted(list(shared)),
         "synergy_label": synergy_label,
         "reasons": reasons,
-        "is_like": total_score >= 45,  # Decision boundary for autonomous agents
     }
+

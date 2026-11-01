@@ -33,6 +33,29 @@ def load_personas() -> list[Path]:
 
 
 def run_simulation(rounds: int = 50, base_url: str = "http://localhost:8088"):
+    if "--reset" in sys.argv:
+        print("🧹 Resetting database and state for a pristine 50-round simulation...")
+        state_dir = ROOT / "agent" / ".state"
+        if state_dir.exists():
+            for f in state_dir.glob("*localhost_8088.json"):
+                try:
+                    f.unlink()
+                except Exception:
+                    pass
+        db_file = ROOT / "backend" / "aimor.db"
+        if db_file.exists():
+            import sqlite3
+            try:
+                conn = sqlite3.connect(str(db_file))
+                conn.execute("DELETE FROM messages;")
+                conn.execute("DELETE FROM matches;")
+                conn.execute("DELETE FROM swipes;")
+                conn.execute("DELETE FROM agents;")
+                conn.commit()
+                conn.close()
+            except Exception as e:
+                print(f"  Warning on DB clean: {e}")
+
     persona_files = load_personas()
     print(f"🚀 Starting AILOVE 50-Round Simulation with {len(persona_files)} personas against {base_url}...")
 
